@@ -37,7 +37,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:layout_marginTop="230dp"
         android:orientation="vertical" >
 
         <EditText
@@ -45,7 +45,7 @@
             android:background="@drawable/input_field"
             android:hint="Email"
             android:paddingRight="25dp"
-            android:drawableRight="@drawable/ic_person"
+            android:drawableRight="@drawable/ic_email"
             android:layout_width="match_parent"
             android:layout_marginBottom="8dp"
             android:layout_height="wrap_content"
