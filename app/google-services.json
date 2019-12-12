@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "287717272052-8ct6hkmvijc7ig13d54g4ii0p7t47v71.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vizbuddy",
+            "certificate_hash": "699a64366e70715ca21f5e951967b853347e32d7"
+          }
+        },
+        {
           "client_id": "287717272052-9p1coberi3pkol9gfrgemmio7tn7vb3e.apps.googleusercontent.com",
           "client_type": 3
         }

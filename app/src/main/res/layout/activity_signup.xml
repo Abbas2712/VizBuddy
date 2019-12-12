@@ -8,7 +8,7 @@
     tools:context=".login">
 
     <ImageView
-        android:id="@+id/appLogo"
+        android:id="@+id/sgAppLogo"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_alignParentTop="true"
@@ -18,7 +18,7 @@
 
     <TextView
 
-        android:id="@+id/appTitle"
+        android:id="@+id/sgAppTitle"
         android:layout_centerHorizontal="true"
         android:layout_marginVertical="170dp"
         android:text="VizBuddy"
@@ -28,7 +28,7 @@
         android:layout_height="40dp"/>
 
     <LinearLayout
-        android:id="@+id/container"
+        android:id="@+id/sgContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/ll_mody"
@@ -50,7 +50,7 @@
             android:layout_height="wrap_content"/>
 
         <EditText
-            android:id="@+id/email"
+            android:id="@+id/sgEmail"
             android:background="@drawable/input_field"
             android:hint="Email"
             android:paddingRight="25dp"
@@ -61,7 +61,7 @@
             android:inputType="textEmailAddress"/>
 
         <EditText
-            android:id="@+id/password"
+            android:id="@+id/sgPassword"
             android:background="@drawable/input_field"
             android:hint="Password"
             android:paddingRight="25dp"
@@ -73,13 +73,14 @@
 
 
         <Button
-            android:id="@+id/signIn"
-            android:text="Sign In"
+            android:id="@+id/sgSignUp"
+            android:text="Sign Up"
             android:background="@drawable/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
         <TextView
+            android:id="@+id/alreadyAccount"
             android:layout_marginTop="8dp"
             android:gravity="center"
             android:textSize="20dp"
@@ -90,4 +91,13 @@
 
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/sgFp"
+        android:layout_marginVertical="650dp"
+        android:textSize="20dp"
+        android:textColor="#ffff"
+        android:gravity="center"
+        android:text="Forgot Password?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 </RelativeLayout>
