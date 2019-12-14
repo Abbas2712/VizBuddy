@@ -45,8 +45,8 @@ public class login extends AppCompatActivity implements View.OnClickListener {
         firebaseAuth = FirebaseAuth.getInstance();
 
         if(firebaseAuth.getCurrentUser() != null){
-            finish();
             startActivity(new Intent(getApplicationContext(), Homepage.class));
+            finish();
         }
 
         bounceLoader = (BounceLoader) findViewById(R.id.proLoad);
@@ -95,9 +95,9 @@ public class login extends AppCompatActivity implements View.OnClickListener {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                       if(task.isSuccessful()){
-                          Toast.makeText(login.this, "Welcome Back!", Toast.LENGTH_SHORT).show();
                           finish();
-                          startActivity(new Intent(getApplicationContext(), Homepage.class));
+                        startActivity(new Intent(getApplicationContext(), Homepage.class));
+                          Toast.makeText(login.this, "Welcome Back!", Toast.LENGTH_SHORT).show();
                       }
                     }
                 });

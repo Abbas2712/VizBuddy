@@ -91,13 +91,4 @@
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/sgFp"
-        android:layout_marginVertical="650dp"
-        android:textSize="20dp"
-        android:textColor="#ffff"
-        android:gravity="center"
-        android:text="Forgot Password?"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
 </RelativeLayout>

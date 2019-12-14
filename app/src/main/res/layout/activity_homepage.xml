@@ -1,9 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/background3"
     android:layout_height="match_parent"
     tools:context=".Homepage">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:textSize="34dp"
+            android:textColor="#FF3F00"
+            android:id="@+id/vizBuddy"
+            android:text="VizBuddy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+    <GridLayout
+        android:rowCount="2"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:layout_weight="8"
+        android:padding="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+
+
+    </GridLayout>
+
+
+
+</RelativeLayout>

@@ -3,26 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#fff"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <ImageView
-        android:src="@mipmap/ic_launcher"
-        android:layout_marginTop="250dp"
+        android:src="@drawable/giphy"
+        android:layout_marginTop="150dp"
         android:layout_centerHorizontal="true"
-        android:layout_width="100dp"
-        android:layout_height="100dp"/>
+        android:layout_width="400dp"
+        android:layout_height="400dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="350dp"
-        android:textSize="30dp"
-        android:text="VizBuddy"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+   <ImageView
+       android:layout_marginTop="350dp"
+       android:layout_centerHorizontal="true"
+       android:src="@drawable/vizsplash"
+       android:layout_width="300dp"
+       android:layout_height="300dp"/>
 
 </RelativeLayout>

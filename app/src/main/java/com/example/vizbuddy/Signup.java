@@ -26,7 +26,6 @@ public class Signup extends AppCompatActivity implements View.OnClickListener {
     public EditText sgEmail;
     public EditText sgPassword;
     public TextView alreadyAccount;
-    public TextView sgFp;
     public FirebaseAuth firebaseAuth;
 
     RelativeLayout myLayout;
@@ -49,7 +48,6 @@ public class Signup extends AppCompatActivity implements View.OnClickListener {
         sgPassword = (EditText) findViewById(R.id.sgPassword);
         sgSignUp = (Button) findViewById(R.id.sgSignUp);
         alreadyAccount = (TextView) findViewById(R.id.alreadyAccount);
-        sgFp = (TextView) findViewById(R.id.sgFp);
 
         sgSignUp.setOnClickListener(this);
         alreadyAccount.setOnClickListener(this);
