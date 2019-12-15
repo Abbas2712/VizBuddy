@@ -8,6 +8,7 @@
     android:background="@drawable/my_bg_anim"
     tools:context=".login">
 
+
     <com.agrawalsuneet.dotsloader.loaders.BounceLoader
         android:id="@+id/proLoad"
         android:layout_centerVertical="true"
@@ -30,7 +31,6 @@
         android:src="@mipmap/ic_launcher" />
 
     <TextView
-
         android:id="@+id/lgAppTitle"
         android:layout_centerHorizontal="true"
         android:layout_marginVertical="170dp"
@@ -104,5 +104,6 @@
         android:text="Forgot Password?"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+
 
 </RelativeLayout>
