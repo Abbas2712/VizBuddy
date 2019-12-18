@@ -30,10 +30,12 @@ public class Profile extends AppCompatActivity implements View.OnClickListener{
         }
 
         FirebaseUser user = firebaseAuth.getCurrentUser();
-        proText.setText("Welcome"+ user.getEmail());
+
 
         proText = (TextView) findViewById(R.id.proText);
         signOut = (Button) findViewById(R.id.signOut);
+
+        proText.setText("Welcome "+ user.getEmail());
 
         signOut.setOnClickListener(this);
 

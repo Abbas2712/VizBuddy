@@ -7,17 +7,17 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:src="@drawable/giphy"
-        android:layout_marginTop="150dp"
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_marginTop="120dp"
         android:layout_centerHorizontal="true"
-        android:layout_width="400dp"
-        android:layout_height="400dp"/>
+        android:src="@drawable/vbgraphiclogo"
+        android:layout_width="600dp"
+        android:layout_height="350dp"/>
 
    <ImageView
+       android:src="@drawable/vizsplash"
        android:layout_marginTop="350dp"
        android:layout_centerHorizontal="true"
-       android:src="@drawable/vizsplash"
        android:layout_width="300dp"
        android:layout_height="300dp"/>
 

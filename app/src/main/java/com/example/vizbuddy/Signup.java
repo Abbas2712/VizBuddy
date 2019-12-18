@@ -40,7 +40,7 @@ public class Signup extends AppCompatActivity implements View.OnClickListener {
 
         if(firebaseAuth.getCurrentUser() != null){
             finish();
-            startActivity(new Intent(getApplicationContext(), Homepage.class));
+            startActivity(new Intent(getApplicationContext(), Profile.class));
         }
 
         sgEmail = (EditText) findViewById(R.id.sgEmail);
@@ -86,7 +86,7 @@ public class Signup extends AppCompatActivity implements View.OnClickListener {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             finish();
-                            startActivity(new Intent(getApplicationContext(), Homepage.class));
+                            startActivity(new Intent(getApplicationContext(), Profile.class));
                             Toast.makeText(Signup.this, "Registered Successfully", Toast.LENGTH_SHORT).show();
                         }else{
                             Toast.makeText(Signup.this, "Could not Register... Please Try Again ", Toast.LENGTH_SHORT).show();
