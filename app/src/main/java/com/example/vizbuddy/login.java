@@ -58,6 +58,7 @@ public class login extends AppCompatActivity implements View.OnClickListener {
 
         signIn.setOnClickListener(this);
         noAccount.setOnClickListener(this);
+        igFp.setOnClickListener(this);
 
         myLayout = (RelativeLayout) findViewById(R.id.myLayout);
 
@@ -113,5 +114,9 @@ public class login extends AppCompatActivity implements View.OnClickListener {
             startActivity(new Intent(this, Signup.class));
         }
 
+        if(v == igFp){
+            finish();
+            startActivity(new Intent(this,passwordreset.class));
+        }
     }
 }
