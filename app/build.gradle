@@ -17,6 +17,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    sourceSets { main { jni.srcDirs = ['src/main/jni', 'src/main/jniLibs/'] } }
 }
 
 dependencies {
@@ -31,6 +32,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth:19.2.0'
     implementation 'com.agrawalsuneet.androidlibs:dotsloader:1.4'
     implementation 'com.google.android.material:material:1.0.0'
+    implementation project(path: ':openCVLibrary249')
 }
 
 apply plugin: 'com.google.gms.google-services'
