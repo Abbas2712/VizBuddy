@@ -45,7 +45,7 @@ public class login extends AppCompatActivity implements View.OnClickListener {
         firebaseAuth = FirebaseAuth.getInstance();
 
         if(firebaseAuth.getCurrentUser() != null){
-            startActivity(new Intent(getApplicationContext(), Profile.class));
+            startActivity(new Intent(getApplicationContext(), Homepage.class));
             finish();
         }
 
@@ -63,8 +63,8 @@ public class login extends AppCompatActivity implements View.OnClickListener {
         myLayout = (RelativeLayout) findViewById(R.id.myLayout);
 
         animationDrawable = (AnimationDrawable) myLayout.getBackground();
-        animationDrawable.setEnterFadeDuration(4500);
-        animationDrawable.setExitFadeDuration(4500);
+        animationDrawable.setEnterFadeDuration(1500);
+        animationDrawable.setExitFadeDuration(1500);
         animationDrawable.start();
 
     }//
