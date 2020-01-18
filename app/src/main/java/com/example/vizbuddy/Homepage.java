@@ -9,6 +9,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 import android.widget.Toolbar;
@@ -19,7 +20,10 @@ import com.luseen.spacenavigation.SpaceOnClickListener;
 
 public class Homepage extends AppCompatActivity implements View.OnClickListener{
 
+    private long backPressedTime;
+    private Toast backToast;
     public CardView creative;
+    public CardView vizualMode;
 
     private DrawerLayout mDrawerLayout;
     SpaceNavigationView navigationView;
@@ -31,7 +35,6 @@ public class Homepage extends AppCompatActivity implements View.OnClickListener{
         setContentView(R.layout.activity_homepage);
 
         navigationView = findViewById(R.id.space);
-
         navigationView.initWithSaveInstanceState(savedInstanceState);
         navigationView.addSpaceItem(new SpaceItem("", R.drawable.ic_home_black));
         navigationView.addSpaceItem(new SpaceItem("", R.drawable.ic_photo_camera));
@@ -57,13 +60,15 @@ public class Homepage extends AppCompatActivity implements View.OnClickListener{
 
 
         creative = (CardView) findViewById(R.id.creativeMode);
+        vizualMode = (CardView) findViewById(R.id.vizualMode);
 
+        vizualMode.setOnClickListener(this);
         creative.setOnClickListener(this);
 
-//        Toolbar toolbar = findViewById(R.id.tBar);
+//        Toolbar tb = findViewById(R.id.tBar);
 //        setSupportActionBar(toolbar);
 
-//        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, mDrawerLayout, toolbar, R.string.open, R.string.close);
+//        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, mDrawerLayout, tb, R.string.open, R.string.close);
 //        mDrawerLayout.addDrawerListener(toggle);
 //        toggle.syncState();
 
@@ -77,6 +82,11 @@ public class Homepage extends AppCompatActivity implements View.OnClickListener{
             finish();
             startActivity(new Intent(this, comingsoon.class));
         }
+
+        if (v == vizualMode){
+            finish();
+            startActivity(new Intent(this,cameramodule.class));
+        }
     }
 
 
@@ -88,7 +98,17 @@ public class Homepage extends AppCompatActivity implements View.OnClickListener{
             super.onBackPressed();
         }
 
+        if(backPressedTime + 2000 > System.currentTimeMillis()) {
+            backToast.cancel();
+            super.onBackPressed();
+            return;
+        }else {
+           backToast =  Toast.makeText(this, "Press back again to exit", Toast.LENGTH_SHORT);
+           backToast.show();
+        }
+        backPressedTime = System.currentTimeMillis();
     }
+
 
 //    public void setSupportActionBar(Toolbar supportActionBar) {
 //        this.supportActionBar = supportActionBar;

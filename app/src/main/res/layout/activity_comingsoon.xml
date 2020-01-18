@@ -10,14 +10,13 @@
 
     <ImageView
         android:id="@+id/backbtn1"
-        android:layout_width="30dp"
+        android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="120dp"
         android:layout_marginEnd="361dp"
-        android:layout_marginBottom="270dp"
+        android:layout_marginBottom="550dp"
         android:src="@drawable/backbutton"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -48,6 +47,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="5dp"
             android:gravity="center"
+            android:textColor="#C4FFFFFF"
             android:text="Coming Soon"
             android:textSize="25dp"
             android:textStyle="bold" />
@@ -57,6 +57,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="10dp"
+            android:textColor="#CEFFFFFF"
             android:gravity="center"
             android:text="Awesomeness Under Development !"
             android:textSize="20dp" />

@@ -21,7 +21,7 @@ public class passwordreset extends AppCompatActivity implements View.OnClickList
     public TextView noAccountFp;
     public Button fpbtn;
     public EditText fpemailid;
-    public ImageView backbtn;
+    public ImageView backBtn;
     private FirebaseAuth firebaseAuth;
 
     @Override
@@ -32,7 +32,7 @@ public class passwordreset extends AppCompatActivity implements View.OnClickList
         firebaseAuth = FirebaseAuth.getInstance();
 
         noAccountFp = (TextView) findViewById(R.id.noAccountFp);
-        backbtn = (ImageView) findViewById(R.id.backbtn);
+        backBtn = (ImageView) findViewById(R.id.backbtn);
         fpemailid = (EditText) findViewById(R.id.fpemailid);
         fpbtn = (Button) findViewById(R.id.fpbtn);
 
@@ -65,7 +65,7 @@ public class passwordreset extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View v) {
-        if(v == backbtn){
+        if(v == backBtn){
             finish();
             startActivity(new Intent(this, login.class));
         }

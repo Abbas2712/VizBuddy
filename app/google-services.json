@@ -8,18 +8,18 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:287717272052:android:8993f18ed89a343c68f1a1",
+        "mobilesdk_app_id": "1:287717272052:android:78479744fa2080ad68f1a1",
         "android_client_info": {
           "package_name": "com.example.vizbuddy"
         }
       },
       "oauth_client": [
         {
-          "client_id": "287717272052-8ct6hkmvijc7ig13d54g4ii0p7t47v71.apps.googleusercontent.com",
+          "client_id": "287717272052-58nlki74a9iem34mah864jhm49as6tea.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.vizbuddy",
-            "certificate_hash": "699a64366e70715ca21f5e951967b853347e32d7"
+            "certificate_hash": "1519ac783f71fd47a6c4d31c79f0410f1275b6ff"
           }
         },
         {

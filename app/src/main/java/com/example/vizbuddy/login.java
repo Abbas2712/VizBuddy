@@ -25,6 +25,8 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class login extends AppCompatActivity implements View.OnClickListener {
 
+    public static final String EXTRA_TEXT = "com.example.application.vizbddy.EXTRA_TEXT";
+    public static final String EXTRA_TEXT1 = "com.example.application.vizbddy.EXTRA_TEXT";
     public Button signIn;
     public EditText lgEmail;
     public EditText lgPassword;
@@ -108,6 +110,7 @@ public class login extends AppCompatActivity implements View.OnClickListener {
     public void onClick(View v) {
         if(v == signIn){
             userLogin();
+            openActivity();
         }
         if(v == noAccount){
             finish();
@@ -118,5 +121,18 @@ public class login extends AppCompatActivity implements View.OnClickListener {
             finish();
             startActivity(new Intent(this,passwordreset.class));
         }
+    }
+
+    public void openActivity() {
+        EditText editText1 = (EditText) findViewById(R.id.name);
+        String text1 = editText1.getText().toString();
+
+        EditText editText2 = (EditText) findViewById(R.id.lgEmail);
+        String text2 = editText2.getText().toString();
+
+        Intent intent = new Intent(this, navigation_header.class);
+        intent.putExtra(EXTRA_TEXT, text1);
+        intent.putExtra(EXTRA_TEXT1, text2);
+        startActivity(intent);
     }
 }
