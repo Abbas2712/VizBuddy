@@ -110,7 +110,7 @@ public class login extends AppCompatActivity implements View.OnClickListener {
     public void onClick(View v) {
         if(v == signIn){
             userLogin();
-            openActivity();
+//            openActivity();
         }
         if(v == noAccount){
             finish();
@@ -123,16 +123,16 @@ public class login extends AppCompatActivity implements View.OnClickListener {
         }
     }
 
-    public void openActivity() {
-        EditText editText1 = (EditText) findViewById(R.id.name);
-        String text1 = editText1.getText().toString();
-
-        EditText editText2 = (EditText) findViewById(R.id.lgEmail);
-        String text2 = editText2.getText().toString();
-
-        Intent intent = new Intent(this, navigation_header.class);
-        intent.putExtra(EXTRA_TEXT, text1);
-        intent.putExtra(EXTRA_TEXT1, text2);
-        startActivity(intent);
-    }
+//    public void openActivity() {
+//        EditText editText1 = (EditText) findViewById(R.id.name);
+//        String text1 = editText1.getText().toString();
+//
+//        EditText editText2 = (EditText) findViewById(R.id.lgEmail);
+//        String text2 = editText2.getText().toString();
+//
+//        Intent intent = new Intent(this, navigation_header.class);
+//        intent.putExtra(EXTRA_TEXT, text1);
+//        intent.putExtra(EXTRA_TEXT1, text2);
+//        startActivity(intent);
+//    }
 }

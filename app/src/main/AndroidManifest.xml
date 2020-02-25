@@ -22,8 +22,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name="navigation_header"/>
-        <activity android:name=".cameramodule" />
-        <activity android:name=".comingsoon" />
+        <activity android:name=".cameramodule"
+            android:parentActivityName=".Homepage"/>
+        <activity android:name=".comingsoon"
+            android:parentActivityName=".Homepage"/>
         <activity android:name=".passwordreset"
             android:parentActivityName=".Homepage"/>
         <activity android:name=".Profile"

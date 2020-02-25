@@ -5,7 +5,7 @@ android {
     buildToolsVersion "29.0.2"
     defaultConfig {
         applicationId "com.example.vizbuddy"
-        minSdkVersion 21
+        minSdkVersion 23
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -39,7 +39,6 @@ dependencies {
 //    implementation 'com.google.firebase:firebase-auth:19.2.0'
     implementation 'com.agrawalsuneet.androidlibs:dotsloader:1.4'
     implementation 'com.google.android.material:material:1.0.0'
-    implementation project(path: ':openCVLibrary342')
 }
 
 apply plugin: 'com.google.gms.google-services'

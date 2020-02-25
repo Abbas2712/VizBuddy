@@ -23,8 +23,8 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class Signup extends AppCompatActivity implements View.OnClickListener {
 
-    public static final String EXTRA_TEXT = "com.example.application.vizbddy.EXTRA_TEXT";
-    public static final String EXTRA_TEXT1 = "com.example.application.vizbddy.EXTRA_TEXT";
+    public static final String EXTRA_TEXT = "com.example.application.vizbuddy.EXTRA_TEXT";
+    public static final String EXTRA_TEXT1 = "com.example.application.vizbuddy.EXTRA_TEXT";
     public Button sgSignUp;
     public EditText sgName;
     public EditText sgEmail;
@@ -119,7 +119,7 @@ public class Signup extends AppCompatActivity implements View.OnClickListener {
     public void onClick(View v) {
         if(v == sgSignUp){
             registerUser();
-            openActivity();
+//            openActivity();
             UserInfo();
         }
         if(v == alreadyAccount){
@@ -128,18 +128,18 @@ public class Signup extends AppCompatActivity implements View.OnClickListener {
         }
     }
 
-    public void openActivity() {
-        EditText editText1 = (EditText) findViewById(R.id.name);
-        String text1 = editText1.getText().toString();
-
-        EditText editText2 = (EditText) findViewById(R.id.sgEmail);
-        String text2 = editText2.getText().toString();
-
-        Intent intent = new Intent(this, navigation_header.class);
-        intent.putExtra(EXTRA_TEXT, text1);
-        intent.putExtra(EXTRA_TEXT1, text2);
-        startActivity(intent);
-    }
+//    public void openActivity() {
+//        EditText editText1 = (EditText) findViewById(R.id.name);
+//        String text1 = editText1.getText().toString();
+//
+//        EditText editText2 = (EditText) findViewById(R.id.sgEmail);
+//        String text2 = editText2.getText().toString();
+//
+//        Intent intent = new Intent(this, navigation_header.class);
+//        intent.putExtra(EXTRA_TEXT, text1);
+//        intent.putExtra(EXTRA_TEXT1, text2);
+//        startActivity(intent);
+//    }
 
 }
 
